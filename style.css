@@ -1,0 +1,132 @@
+.body{
+    background: hsl(234, 29%, 20%);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color:hsl(235, 19%, 24%);
+}
+.signUpBox h1{
+    font-weight: 700;
+}
+
+.signUpBox{
+    background-color:#fff;
+    display: inline-block;
+    margin-top: 120px;
+    text-align: left;
+    padding: 20px;
+}
+
+input{
+    font-family: inherit;
+    border: 1px solid hsl(231, 7%, 60%) !important;
+    
+}
+
+input::placeholder{
+    font-size: 12px;
+    color:gray;
+}
+
+input:focus{
+    border: 1px solid black !important ;
+    box-shadow:none !important;
+}
+.flexible{
+    display: flex;
+}
+i{
+    color: hsl(4, 100%, 67%);
+}
+/* error  */
+
+#error{
+    font-size: 11px;
+    color:hsl(4, 100%, 67%);
+    font-weight: bold;
+}
+
+#error-border:focus{
+    border: 2px solid red !important;
+}
+
+
+.error-input{
+    background-color: rgba(234, 164, 164, 0.555) !important; 
+}
+
+
+.signUpBox button{
+    background-color:hsl(234, 29%, 20%);
+    color:white;
+    font-size: 14px;
+    padding:10 px;
+    width: 100%;
+}
+
+.signUpBox button:hover{
+   
+    background: linear-gradient(hsl(4, 84%, 64%),hsl(4, 100%, 67%));
+    color:white;
+
+}
+
+#content{
+    margin  : 40px;
+    width: 375px;
+    padding: 10px;
+}
+
+#content label{
+font-weight: 700;
+}
+
+.signUpBox img{
+    height: 500px;
+}
+
+.signUpBox #img1{
+    display: block;
+}
+
+.signUpBox #img2{
+    display: none;
+}
+
+/* Thanks Desktop */
+
+.thanks{
+    width: 340px;
+    height: 340px;
+    font-size: 12px;
+}
+
+/* Responsive code */
+
+@media (max-width:375px){
+   
+    #banner{
+        background-image: url("assets/images/illustration-sign-up-mobile.svg");
+    }
+
+    .signUpBox #img1{
+        display: none;
+    }
+    
+    .signUpBox #img2{
+        display: block;
+    }
+    
+
+    .signUpBox{
+        margin-top:0;
+    }
+
+    .body{
+        text-align: left;
+    }
+    .flexible{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+  
+}
